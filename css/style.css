@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.contenedor{
+    background-image: url("../img/pattern-background-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20%;
+}
+
+/*Card*/
+.card{
+    border-radius: 25px;
+}
+.card .card-img-top{
+    border-radius: 25px 25px 0px 0px;
+}
+.card .card-body{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10%;
+}
+.card .card-body .textos{
+    padding: 0px 25%;
+}
+.card .card-body .textos h2{
+    font-weight: 900;
+}
+.card .card-body .textos p{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: .7;
+}
+.card .card-body .plan{
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px 20px 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.24);
+}
+.card .card-body .plan img{
+    width: 50px;
+}
+.card .card-body .plan .text h2,
+.card .card-body .plan .text p{
+    font-size: 16px;
+}
+.card .card-body .plan .text h2{
+    font-weight: 700;
+}
+.card .card-body .plan .text p{
+    opacity: .7;
+}
+.card .card-body .plan a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.card .card-body .plan a:hover{
+    opacity: .7;
+    text-decoration: none;
+}
+.card .card-body .botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+.card .card-body .botones a{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 300%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 18px;
+}
+.card .card-body .botones a:hover{
+    opacity: .7;
+}
+.card .card-body .botones a.btn.cancel.mt-3{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    opacity: .8;
+    box-shadow: none;
+}
